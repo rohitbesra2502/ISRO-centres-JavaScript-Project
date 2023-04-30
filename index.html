@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Space Research organization</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./isro-icon.ico">
+</head>
+<body>
+    <header class="header-wrapper">
+        <nav class="nav-bar">
+            <h1 class="heading-1">ISRO</h1>
+            <input type="text" placeholder="search for ISRO centers based on Place, State and Name..." required class="search" id="js-input">
+            <div class="btns">
+                <button class="btn city-btn" id="city" name="Place">City</button>
+                <button class="btn state-btn" id="state" name="State">State</button>
+                <button class="btn center-btn" id="center" name="name">Center</button>
+            </div>
+        </nav>
+    </header>
+    <main class="main-wrapper">
+        <section class="inner-section">
+            <div class="table-section">
+                <table class="table-data">
+                    <thead class="t-head">
+                        <tr class="row-head">
+                            <th class="center-head">Center</th>
+                            <th class="city-head">City</th>
+                            <th class="state-head">State</th>
+                        </tr>
+                    </thead>
+                    <tbody id="t-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>&copy; 2023 ISRO CENTER</footer>
+    <script src="./App.js"></script>
+</body>
+</html>
