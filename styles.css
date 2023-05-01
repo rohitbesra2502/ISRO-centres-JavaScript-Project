@@ -135,60 +135,62 @@ footer{
 }
 
 /* for responsive design */
-@media (max-width: 550px) {
+/* min-width:350px */
+@media (max-width: 550px){
+    
     .main-wrapper{
-        /* margin: 0;
-        padding: 0; */
-        border-radius: 0;
-        /* border: 1px solid white; */
+        border-radius:0;
         background: none;
     }
     .inner-section{
-        margin: 0%;
+        margin: 0;
     }
-    table{
+    .table-section{
         padding: 0;
-        border-collapse: collapse;
     }
-    
+    .table-data{
+        width: 100%;
+        padding: 0;
+        font-size:9px;
+    }
+    th{
+       font-size: 14px;
+       padding: 3px; 
+    }
     .nav-bar{
         display: flex;
         flex-direction: column;
+        justify-items: center;
         align-items: center;
-        justify-content: center;
-    }
-    .search{
-        width: 80%;
-        height: 50px;
-        margin-top: 5px;
-        border-radius: 3px;
-        margin-bottom: 10px;
-        /* border: 3px solid red; */
-    }
-    .btns{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* border: 1px solid white; */
-    }
-    .city-btn{
-        margin-left: 50px;
-    }
-    .btn{
         padding: 5px;
     }
+    .search{
+        border-radius: 25px;
+        height: 35px;
+        border: none;
+        padding: 20px;
+        width: 80%;
+    }
+    .heading-1{
+        margin:0;
+        padding: 0;
+    }
+    .btns{
+        margin: 0;
+        padding: 0;
+    }
     .btn:hover{
-        border: 1px solid #fff;
-        border-radius: 0;
+        border: 3px solid palevioletred;
         box-shadow: none;
     } 
     .active {
-        /* background-color: hsl(203, 92%, 30%); */
-        transform: scale(0.95);
-        border: 1px solid #fff;
         box-shadow: none;
-        border-radius: 0;
-      }
-
-
+        border: 1px solid #F7FD04;
+        border-radius: 25px;
+    }
+    footer{
+        font-size: 20px;
+        color: #212121;
+        background-color: #F7FD04;
+    }
 }   
